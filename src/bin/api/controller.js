@@ -17,7 +17,7 @@ async function getLastest(_, res) {
       $(getLastest).find('.row article').each((_, e) => {
          let el = $(e);
          let title = el.find('.Title').html().split('\t')[0]
-         let poster = el.find('.Image img').attr('src');
+         let img = el.find('.Image img').attr('src');
          let type = el.find('.Image figure span').text();
          type = type.substring(1, type.length)
          let nEpisode = el.find('.dataEpi .episode').text();
